@@ -198,46 +198,79 @@ window.addEventListener('DOMContentLoaded', () => {
 	// * Slick-slider
 	// * ====================================================
 
-	$('.advantage__gallery').slick({
-		infinite: true,
-		speed: 300,
-		slidesToShow: 4,
+	// $('.advantage__gallery').slick({
+	// 	infinite: true,
+	// 	speed: 300,
+	// 	slidesToShow: 4,
 
-		responsive: [{
-				breakpoint: 992,
-				settings: {
-					centerPadding: '1px',
-					slidesToShow: 3,
-					slidesToScroll: 1,
-				}
+	// 	responsive: [{
+	// 			breakpoint: 992,
+	// 			settings: {
+	// 				centerPadding: '1px',
+	// 				slidesToShow: 3,
+	// 				slidesToScroll: 1,
+	// 			}
+	// 		},
+	// 		{
+	// 			breakpoint: 770,
+	// 			settings: {
+	// 				centerPadding: '2px',
+	// 				slidesToShow: 3,
+	// 				slidesToScroll: 1,
+	// 			}
+	// 		},
+	// 		{
+	// 			breakpoint: 650,
+	// 			settings: {
+	// 				centerPadding: '2px',
+	// 				slidesToShow: 2,
+	// 				slidesToScroll: 1,
+	// 			}
+	// 		},
+	// 		{
+	// 			breakpoint: 450,
+	// 			settings: {
+	// 				centerMode: true,
+	// 				centerPadding: '2px',
+	// 				slidesToShow: 1,
+	// 				slidesToScroll: 1,
+	// 			}
+	// 		}
+	// 	]
+	// });
+	// $('.advantage__gallery').slick('setPosition');
+
+
+
+	// * OWL-carousel
+	// * ========================================
+
+	$('.advantage__gallery').owlCarousel({
+		center: false,
+		items: 4,
+		loop: false,
+		margin: 0,
+		nav: false,
+		dots: false,
+		responsive: {
+			960: {
+				items: 4
 			},
-			{
-				breakpoint: 770,
-				settings: {
-					centerPadding: '2px',
-					slidesToShow: 3,
-					slidesToScroll: 1,
-				}
+			768: {
+				loop: false,
+				items: 3
 			},
-			{
-				breakpoint: 650,
-				settings: {
-					centerPadding: '2px',
-					slidesToShow: 2,
-					slidesToScroll: 1,
-				}
+			600: {
+				center: true,
+				items: 4,
+				loop: true
 			},
-			{
-				breakpoint: 450,
-				settings: {
-					centerMode: true,
-					centerPadding: '2px',
-					slidesToShow: 1,
-					slidesToScroll: 1,
-				}
+			320: {
+				center: true,
+				items: 3,
+				loop: true
 			}
-		]
+		}
 	});
-	$('.advantage__gallery').slick('setPosition');
 
 });

@@ -240,4 +240,5 @@ window.addEventListener('DOMContentLoaded', () => {
 	});
 	$('.advantage__gallery').slick('setPosition');
 
+
 });
