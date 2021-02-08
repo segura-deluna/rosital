@@ -1,0 +1,64 @@
+<div class="container">
+	<div class="request">
+		<div class="request__content">
+			<h2 class="request__title">Оставьте заявку</h2>
+			<!-- /.request__tittle -->
+			<form class="request__form form">
+				<input type="text" class="form__name" placeholder="Имя">
+				<input type="text" class="form__phone" placeholder="Номер телефона">
+				<input type="text" class="form__mail" placeholder="Email">
+				<textarea class="form__text" placeholder="Комментарий"></textarea>
+
+				<div class="request__file file">
+					<p class="file__doc">
+						Добавить рабочую документацию или реквизиты
+					</p>
+					<!-- /.file__doc -->
+					<div class="file__download">
+						<input class="file__download-input" type="file" name="file" id="file" multiple>
+						<label class="file__download-label" for="file">Загрузить файл</label>
+					</div>
+					<!-- /.file__download -->
+				</div>
+				<!-- /.request__file -->
+				<div class="request__conf">
+					<input type="checkbox" class="conf__check" id="conf">
+					<label class="conf__text" for="conf">
+						Я согласен с политикой конфиденциальности и даю согласие
+						на обработку моих персональных данных
+					</label>
+				</div>
+				<!-- /.request__conf -->
+				<button type="submit" class="request__btn left" data-modal="answer-modal">
+					Отправить заявку
+				</button>
+				<!-- /.request__btn -->
+			</form>
+			<!-- /.request__form -->
+		</div>
+		<!-- /.request__content -->
+	</div>
+	<!-- /.request -->
+</div>
+<!-- /.container -->
+
+
+
+<!-- MODAL SUCCESS -->
+<div class="answer-modal modal" id="answer-modal">
+	<div class="answer-modal__content modal__content">
+		<button class="modal__close" type="button">
+			<svg class="close-btn">
+				<use xlink:href="img/icons/sprite.svg#close"></use>
+			</svg>
+		</button>
+		<h2 class="answer-modal__title">Успех!</h2>
+		<div class="answer-modal__text">
+			<p>Ваша заявка принята</p>
+			<p>Мы свяжемся с вами в ближайшее время</p>
+		</div>
+		<div class="answer-modal__ok left">OK</div>
+	</div>
+	<!-- /.answer__content -->
+</div>
+<!-- /.answer -->
