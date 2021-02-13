@@ -51,9 +51,9 @@ window.addEventListener('DOMContentLoaded', () => {
 			body.classList.add('no-scroll');
 
 			setTimeout(() => {
-				modalContent.style.transform = 'none';
+				modalContent.style.cssText = `transform:scale(1);`;
 				modalContent.style.opacity = '1';
-			}, 3);
+			}, 30);
 
 		});
 	});

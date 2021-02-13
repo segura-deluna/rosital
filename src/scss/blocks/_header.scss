@@ -473,7 +473,7 @@
     padding: 8rem 8rem 2.5rem;
     background-color: $white;
     opacity: 0;
-    transform: translateY(-100px);
+    transform: scale(0);
     transition: transform 0.3s linear, opacity 0.3s linear;
     z-index: 200;
   }
